@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="WorldChatterAddonChecker">
+    <output-path>$PROJECT_DIR$/../../Servers/Minecraft</output-path>
+    <root id="archive" name="WorldChatterAddonChecker.jar">
+      <element id="module-output" name="WorldChatterAddonChecker" />
+    </root>
+  </artifact>
+</component>

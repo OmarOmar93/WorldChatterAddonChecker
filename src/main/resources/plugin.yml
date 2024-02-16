@@ -1,0 +1,8 @@
+name: WCAC
+version: '${project.version}'
+main: me.omaromar93.worldchatteraddonchecker.WCAC
+api-version: '1.20'
+softdepend: [WorldChatter]
+authors: [OmarOmar93]
+description: Tests WorldChatterAPI if it works as intended
+prefix: "WORLDCHATTERCHECKERLOGGER"
