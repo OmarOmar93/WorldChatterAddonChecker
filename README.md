@@ -5,6 +5,7 @@
 ## You need to add the plugin as an external library in your project
 ### and make sure that you depend it in ur **"plugin.yml"**
 ![pluginyml.png](pluginyml.png)
+
 "softdepend" or "depend" as you like ^^
 
 # Step 2
