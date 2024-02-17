@@ -5,6 +5,7 @@
 ## You need to add the plugin as an external library in your project
 ### and make sure that you depend it in ur **"plugin.yml"**
 ![pluginyml.png](pluginyml.png)
+"softdepend" or "depend" as you like ^^
 
 # Step 2
 ## add this code to make it able to work and register the listener into any class you like!
@@ -17,7 +18,7 @@
     }
 ```
 # Step 3
-## in your new listener class add "implements WorldChatAPI" on the class and add all the methods
+## in your new listener class add "implements WorldChatterAPI" on the class and add all the methods
 ```java
 public class Listener implements WorldChatterAPI {
     @Override
