@@ -43,7 +43,7 @@ public class Listener implements WorldChatterAPI {
 ## and now you are ready to create an Addon!
 
 # alternative step
-## you can add the plugin via maven by adding the jar locally in your plugin
+## you can add the plugin via maven by adding the jar from jitpack.io
 ```xml
      <repositories>
 		<repository>
