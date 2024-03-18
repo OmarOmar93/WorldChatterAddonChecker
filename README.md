@@ -45,11 +45,16 @@ public class Listener implements WorldChatterAPI {
 # alternative step
 ## you can add the plugin via maven by adding the jar locally in your plugin
 ```xml
-      <dependency>
-          <groupId>me.omaromar93</groupId>
-          <artifactId>WorldChatter</artifactId>
-          <scope>system</scope>
-          <version>2.0.5</version>
-          <systemPath>PLUGINPATH</systemPath>
-      </dependency>
+     <repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
+	<dependency>
+	    <groupId>com.github.OmarOmar93</groupId>
+	    <artifactId>WorldChatter</artifactId>
+	    <version>c51a927e31</version>
+	</dependency>
 ```
