@@ -1,15 +1,15 @@
 package me.omaromar93.worldchatteraddonchecker;
 
-import me.omaromar93.worldchatter.utils.API.WorldChatterAPI;
-import org.bukkit.command.CommandSender;
-import org.bukkit.event.player.AsyncPlayerChatEvent;
+import API.WorldChatterAPI;
+import UniversalFunctions.ChatEvent;
+import UniversalFunctions.CommandSender;
 
 import java.util.List;
 
 public class Listener implements WorldChatterAPI {
     @Override
-    public void messageDetect(AsyncPlayerChatEvent asyncPlayerChatEvent, List<String> list) {
-        System.out.println("Event Check: " + asyncPlayerChatEvent.getMessage() + " flags: " + String.join(", ", list));
+    public void messageDetect(ChatEvent chatEvent, List<String> list, Object o) {
+        System.out.println("Event Check: " + chatEvent.getMessage() + " flags: " + String.join(", ", list));
     }
 
     @Override

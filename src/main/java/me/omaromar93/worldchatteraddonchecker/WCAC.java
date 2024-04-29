@@ -1,16 +1,16 @@
 package me.omaromar93.worldchatteraddonchecker;
 
-import me.omaromar93.worldchatter.WorldChatter;
-import org.bukkit.Bukkit;
+import API.APICore;
+import UniversalFunctions.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class WCAC extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        WorldChatter main = (WorldChatter) Bukkit.getPluginManager().getPlugin("WorldChatter");
-
-        main.getAPICore().addListener(this, new Listener());
+        // new
+        APICore api = new APICore();
+        api.addListener(new Plugin(this.getName(),this.getDescription().getDescription(),this.getDescription().getAuthors()), new Listener());
     }
 
     @Override
