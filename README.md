@@ -53,8 +53,8 @@ public class Listener implements WorldChatterAPI {
 	</repositories>
 
 	<dependency>
-	    <groupId>com.github.OmarOmar93</groupId>
-	    <artifactId>WorldChatter</artifactId>
-	    <version>e60ab6fda9</version>
-	</dependency>
+          <groupId>com.github.OmarOmar93</groupId>
+          <artifactId>WorldChatter</artifactId>
+          <version>-SNAPSHOT</version>
+      </dependency>
 ```
