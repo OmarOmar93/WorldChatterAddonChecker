@@ -3,8 +3,6 @@ package me.omaromar93.worldchatteraddonchecker;
 import API.WorldChatterAPI;
 import UniversalFunctions.ChatEvent;
 import UniversalFunctions.CommandSender;
-import org.bukkit.event.player.AsyncPlayerChatEvent;
-
 import java.util.List;
 
 public class Listener implements WorldChatterAPI {
