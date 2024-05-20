@@ -19,7 +19,7 @@
             </dependency>
         </dependencies>
 ```
-### and make sure that you depend it in ## You need to add the plugin as an external library in your projectur **"plugin.yml"**
+### and make sure that you depend it in "plugin.yml"
 ![pluginyml.png](pluginyml.png)
 
 "softdepend" or "depend" as you like ^^
