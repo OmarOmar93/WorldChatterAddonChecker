@@ -16,10 +16,15 @@ public class Listener implements WorldChatterAPI {
         System.out.println("ChatLock Toggled to " + b);
     }
 
+    @Override
+    public void updateChecked(boolean b, boolean b1) {
+        System.out.println("Is it updated?: " + (b ? "yes" : "no"));
+        System.out.println("Is development build?: " + (b1 ? "yes" : "no"));
+    }
 
     @Override
     public void updateChecked(boolean b) {
-        System.out.println("Is it updated?: " + (b ? "yes" : "no"));
+        // depreciated
     }
 
     @Override
