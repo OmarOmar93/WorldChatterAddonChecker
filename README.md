@@ -15,7 +15,7 @@
             <dependency>
                 <groupId>com.github.OmarOmar93</groupId>
                 <artifactId>WorldChatter</artifactId>
-                <version>2.4.1</version>
+                <version>2.4.9</version>
             </dependency>
         </dependencies>
 ```
