@@ -49,7 +49,7 @@ public class Listener implements WorldChatterAPI {
 
 
     @Override
-    public void updateChecked(boolean b) {
+    public void updateChecked(boolean b, boolean c) {
         System.out.println("Is it updated?: " + (b ? "yes" : "no"));
     }
 
