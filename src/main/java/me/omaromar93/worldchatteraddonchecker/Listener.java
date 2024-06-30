@@ -23,11 +23,6 @@ public class Listener implements WorldChatterAPI {
     }
 
     @Override
-    public void updateChecked(boolean b) {
-        // depreciated
-    }
-
-    @Override
     public void configReload(CommandSender commandSender, Object o) {
         if (commandSender == null) {
             System.out.println("Config has been executed by WorldChatter");
