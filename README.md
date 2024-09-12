@@ -2,23 +2,8 @@
 ## Here you can learn how to implement it in your plugin!
 
 # Step 1
-## Add the plugin via maven by adding the jar from jitpack.io
-```xml
-     <repositories>
-		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
-		</repository>
-	</repositories>
+## Add the plugin's jar into ur project's library
 
-    <dependencies>
-            <dependency>
-                <groupId>com.github.OmarOmar93</groupId>
-                <artifactId>WorldChatter</artifactId>
-                <version>2.4.10</version>
-            </dependency>
-    </dependencies>
-```
 ### and make sure that you depend it in ## You need to add the plugin as an external library in your projectur **"plugin.yml"**
 ![pluginyml.png](pluginyml.png)
 
