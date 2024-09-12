@@ -83,10 +83,5 @@
           <version>1.20.4-R0.1-SNAPSHOT</version>
           <scope>provided</scope>
       </dependency>
-      <dependency>
-          <groupId>com.github.OmarOmar93</groupId>
-          <artifactId>WorldChatter</artifactId>
-          <version>2.4.10</version>
-      </dependency>
   </dependencies>
 </project>

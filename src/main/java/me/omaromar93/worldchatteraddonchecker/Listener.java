@@ -1,34 +1,37 @@
 package me.omaromar93.worldchatteraddonchecker;
 
-import API.WorldChatterAPI;
-import UniversalFunctions.ChatEvent;
-import UniversalFunctions.CommandSender;
+import WorldChatterCore.API.WCListener;
+import WorldChatterCore.Connectors.Interfaces.CommandSender;
+import WorldChatterCore.Features.ChatLock;
+import WorldChatterCore.Players.Player;
+import WorldChatterCore.Systems.UpdateSystem;
+
 import java.util.List;
 
-public class Listener implements WorldChatterAPI {
+public class Listener implements WCListener {
+
     @Override
-    public void messageDetect(ChatEvent chatEvent, List<String> list, Object o) {
-        System.out.println("Event Check: " + chatEvent.getMessage() + " flags: " + String.join(", ", list));
+    public void messageDetect(List<String> list, Player player, String s) {
+        System.out.println("Event Check: " + s + " flags: " + String.join(", ", list));
     }
 
     @Override
-    public void chatLockToggle(CommandSender commandSender, boolean b, Object o) {
-        System.out.println("ChatLock Toggled to " + b);
+    public void chatLockToggle(CommandSender commandSender) {
+        System.out.println("ChatLock Toggled to " + ChatLock.INSTANCE.isLocked());
     }
 
     @Override
-    public void updateChecked(boolean b, boolean b1) {
-        System.out.println("Is it updated?: " + (b ? "yes" : "no"));
-        System.out.println("Is development build?: " + (b1 ? "yes" : "no"));
+    public void updateChecked(CommandSender commandSender) {
+        System.out.println("Is it updated?: " + (UpdateSystem.INSTANCE.getBuild() > 200 ? "yes" : "no"));
+        System.out.println("Is development build?: " + (UpdateSystem.INSTANCE.isDev() ? "yes" : "no"));
     }
 
     @Override
-    public void configReload(CommandSender commandSender, Object o) {
+    public void senderConfigReload(CommandSender commandSender) {
         if (commandSender == null) {
             System.out.println("Config has been executed by WorldChatter");
         } else {
             System.out.println("Config has been executed by " + commandSender.getName());
         }
     }
-
 }

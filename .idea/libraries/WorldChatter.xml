@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="WorldChatter">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Servers/Minecraft/WorldChatter.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
