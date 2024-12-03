@@ -4,6 +4,7 @@ import WorldChatterCore.API.WCListener;
 import WorldChatterCore.Connectors.Interfaces.CommandSender;
 import WorldChatterCore.Features.ChatLock;
 import WorldChatterCore.Players.Player;
+import WorldChatterCore.Systems.FeatureSystem;
 import WorldChatterCore.Systems.UpdateSystem;
 
 import java.util.List;
@@ -33,5 +34,12 @@ public class Listener implements WCListener {
         } else {
             System.out.println("Config has been executed by " + commandSender.getName());
         }
+    }
+
+    @Override
+    public void onMessage(FeatureSystem featureSystem, CommandSender commandSender, String s) {
+        featureSystem.setCancelled(true); // disabled the event
+        featureSystem.setCancelled(false); // didn't disable the event :P
+        featureSystem.setReason("The reason is that for testing purposes only");
     }
 }

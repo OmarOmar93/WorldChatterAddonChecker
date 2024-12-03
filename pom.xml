@@ -83,5 +83,12 @@
           <version>1.20.4-R0.1-SNAPSHOT</version>
           <scope>provided</scope>
       </dependency>
+      <dependency>
+          <groupId>me.omaromar93</groupId>
+          <artifactId>worldchatter</artifactId>
+          <version>latest</version>
+          <scope>system</scope>
+          <systemPath>D:/Projects/Servers/1.8_Server/plugins/WorldChatter.jar</systemPath>
+      </dependency>
   </dependencies>
 </project>
