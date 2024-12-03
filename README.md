@@ -49,6 +49,15 @@ public class Listener implements WCListener {
             System.out.println("Config has been executed by " + commandSender.getName());
         }
     }
+
+    @Override
+    public void onMessage(FeatureSystem featureSystem, CommandSender commandSender, String s) {
+        featureSystem.setCancelled(true); // disabled the event
+        featureSystem.setCancelled(false); // didn't disable the event :P
+        featureSystem.setReason("The reason is that for testing purposes only");
+    }
+    
+    
 }
 ```
 
