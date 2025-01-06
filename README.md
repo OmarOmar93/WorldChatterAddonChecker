@@ -4,12 +4,14 @@
 # Step 1
 ## Add the plugin's jar into ur project's library
 
+## That's if you want to support WorldChatter in ur plugin the rest of the steps are for WorldChatter Addons.
+
 ### and make sure that you depend it in ## You need to add the plugin as an external library in your projectur **"plugin.yml"**
 ![pluginyml.png](pluginyml.png)
 
 "softdepend" or "depend" as you like ^^
 
-# Step 2 (optional for addons)
+# Step 2
 ## add this code to make it able to work and register the listener into any class you like!
 ```java
 @Override
