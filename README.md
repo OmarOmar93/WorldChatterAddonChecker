@@ -9,7 +9,7 @@
 
 "softdepend" or "depend" as you like ^^
 
-# Step 2
+# Step 2 (optional for addons)
 ## add this code to make it able to work and register the listener into any class you like!
 ```java
 @Override
